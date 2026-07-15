@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="markBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3B6C3"/>
+      <stop offset="55%" stop-color="#8C3D74"/>
+      <stop offset="100%" stop-color="#3D1A33"/>
+    </linearGradient>
+    <linearGradient id="markGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D98B"/>
+      <stop offset="100%" stop-color="#C99A2E"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="url(#markBg)"/>
+
+  <!-- stylized hanger forming an R silhouette -->
+  <g fill="none" stroke="url(#markGold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 48 C100 40 108 34 116 40 C124 46 122 58 112 62 L100 68"/>
+    <path d="M40 140 L100 68 L160 140" />
+    <path d="M58 122 L142 122"/>
+  </g>
+
+  <!-- flowing ribbon swirl (the "revogue" motion) -->
+  <path d="M62 96 C80 84 96 100 92 116 C88 132 106 140 122 128"
+        fill="none" stroke="#FFF8F3" stroke-width="4.5" stroke-linecap="round" opacity="0.9"/>
+
+  <circle cx="122" cy="128" r="4.5" fill="#FFF8F3"/>
+</svg>

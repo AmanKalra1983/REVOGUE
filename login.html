@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login or Sign Up — REVOGUE</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.svg" alt="REVOGUE logo"> REVOGUE</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About Us</a></li>
+      <li><a href="purpose.html" data-page="purpose.html">Our Purpose</a></li>
+      <li><a href="dashboard.html" data-page="dashboard.html">Style Studio</a></li>
+    </ul>
+    <div class="nav-right">
+      <div id="navAuthSlot" class="nav-auth"></div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-tabs">
+      <button id="tabLogin" class="active" type="button">Log In</button>
+      <button id="tabSignup" type="button">Sign Up</button>
+    </div>
+
+    <div id="loginError" class="form-error"></div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Log In</button>
+      <p class="form-hint" style="text-align:center; margin-top:16px;">New to REVOGUE? <a href="#" id="goSignup" style="color:var(--plum); font-weight:600;">Create an account</a></p>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signupForm" style="display:none;">
+      <div class="form-group">
+        <label for="signupName">Full name</label>
+        <input type="text" id="signupName" required placeholder="Jane Doe">
+      </div>
+      <div class="form-group">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" required placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" required placeholder="At least 6 characters" minlength="6">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="signupAge">Age</label>
+          <input type="number" id="signupAge" required min="13" max="100" placeholder="24">
+        </div>
+        <div class="form-group">
+          <label for="signupLocation">Location (city)</label>
+          <input type="text" id="signupLocation" required placeholder="Mumbai, India">
+        </div>
+      </div>
+      <p class="form-hint" style="margin-bottom:18px;">We use your age and location to personalise AI style suggestions — never shared with anyone else.</p>
+      <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      <p class="form-hint" style="text-align:center; margin-top:16px;">Already have an account? <a href="#" id="goLogin" style="color:var(--plum); font-weight:600;">Log in</a></p>
+    </form>
+  </div>
+</section>
+
+<script src="js/storage.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

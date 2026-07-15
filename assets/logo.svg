@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200">
+  <defs>
+    <linearGradient id="markBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3B6C3"/>
+      <stop offset="55%" stop-color="#8C3D74"/>
+      <stop offset="100%" stop-color="#3D1A33"/>
+    </linearGradient>
+    <linearGradient id="markGold2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D98B"/>
+      <stop offset="100%" stop-color="#C99A2E"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="88" fill="url(#markBg2)"/>
+  <g fill="none" stroke="url(#markGold2)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 55 C100 48 107 43 114 48 C121 53 119 64 110 67 L100 73"/>
+    <path d="M48 132 L100 73 L152 132" />
+    <path d="M64 116 L136 116"/>
+  </g>
+  <path d="M68 98 C84 88 98 102 94 116 C90 130 106 137 120 127"
+        fill="none" stroke="#FFF8F3" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="120" cy="127" r="4" fill="#FFF8F3"/>
+
+  <text x="205" y="112" font-family="'Playfair Display', Georgia, serif" font-size="58" font-weight="700" fill="#3D1A33">REVOGUE</text>
+  <text x="207" y="140" font-family="'Poppins', Arial, sans-serif" font-size="16" letter-spacing="3" fill="#8C3D74">RESTYLE &#8226; REIMAGINE &#8226; REPEAT</text>
+</svg>

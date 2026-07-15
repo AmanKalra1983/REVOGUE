@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Studio — REVOGUE</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-brand"><img src="assets/logo-mark.svg" alt="REVOGUE logo"> REVOGUE</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About Us</a></li>
+      <li><a href="purpose.html" data-page="purpose.html">Our Purpose</a></li>
+      <li><a href="dashboard.html" data-page="dashboard.html">Style Studio</a></li>
+    </ul>
+    <div class="nav-right">
+      <div id="navAuthSlot" class="nav-auth"></div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<div class="dash-header">
+  <div class="container">
+    <div>
+      <h1 id="greeting">Welcome back!</h1>
+      <p id="profileLine"></p>
+    </div>
+    <a href="#suggestSection" class="btn btn-gold">✨ Get Styled Now</a>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <h2>My Closet <span style="font-size:1rem; font-weight:400; color:#7a5c72;">(<span id="closetCount">0</span>/15 photos)</span></h2>
+    <p style="color:#7a5c72; margin-top:-8px;">Upload photos of your clothes. Tag each item's type so the AI Style Advisor can build better looks.</p>
+
+    <label class="upload-zone" id="uploadZone">
+      <input type="file" id="fileInput" accept="image/*" multiple>
+      <div style="font-size:2rem; margin-bottom:10px;">📸</div>
+      <strong>Click to upload clothing photos</strong>
+      <p class="form-hint">JPG or PNG, up to 15 photos total</p>
+    </label>
+    <p id="uploadMsg" class="form-hint"></p>
+
+    <div id="closetGrid" class="closet-grid"></div>
+    <p id="closetEmpty" class="empty-state">Your closet is empty — upload your first item above.</p>
+  </div>
+</section>
+
+<section class="section-alt" id="suggestSection">
+  <div class="container">
+    <h2>AI Style Advisor</h2>
+    <p style="color:#7a5c72; margin-top:-8px;">Tell us the occasion and we'll style a look from your closet, with accessories to match.</p>
+
+    <div class="suggest-panel">
+      <span class="ai-badge">✨ Powered by Gemini AI</span>
+      <div class="suggest-controls">
+        <div class="form-group">
+          <label for="occasionSelect">Occasion</label>
+          <select id="occasionSelect">
+            <option value="casual">Casual Day Out</option>
+            <option value="office">Office / Formal</option>
+            <option value="party">Party Night</option>
+            <option value="wedding">Wedding Guest</option>
+            <option value="date">Date Night</option>
+            <option value="travel">Travel / Vacation</option>
+            <option value="festival">Festival / Celebration</option>
+            <option value="gym">Gym / Sporty</option>
+          </select>
+        </div>
+        <button id="suggestBtn" class="btn btn-primary">✨ Suggest My Style</button>
+      </div>
+      <div id="suggestResults"></div>
+    </div>
+
+    <div id="historyWrap" style="margin-top:40px;">
+      <h3>Recent Looks</h3>
+      <div id="historyResults"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-brand" style="color:var(--cream-soft); margin-bottom:14px;"><img src="assets/logo-mark.svg" alt="REVOGUE logo"> REVOGUE</div>
+        <p style="opacity:0.8; max-width:32ch;">Your AI-powered style companion — rediscover your wardrobe, one occasion at a time.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="purpose.html">Our Purpose</a></li>
+          <li><a href="dashboard.html">Style Studio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li>REVOGUE Studio</li>
+          <li>12 Fashion Avenue, Connaught Place</li>
+          <li>New Delhi, India 110001</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 REVOGUE. A student project built for academic purposes.</div>
+  </div>
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/upload.js"></script>
+<script src="js/suggest.js"></script>
+</body>
+</html>
