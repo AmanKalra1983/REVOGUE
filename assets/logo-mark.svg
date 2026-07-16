@@ -1,28 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <defs>
-    <linearGradient id="markBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F3B6C3"/>
-      <stop offset="55%" stop-color="#8C3D74"/>
-      <stop offset="100%" stop-color="#3D1A33"/>
-    </linearGradient>
-    <linearGradient id="markGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F3D98B"/>
-      <stop offset="100%" stop-color="#C99A2E"/>
-    </linearGradient>
-  </defs>
-
-  <circle cx="100" cy="100" r="98" fill="url(#markBg)"/>
-
-  <!-- stylized hanger forming an R silhouette -->
-  <g fill="none" stroke="url(#markGold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M100 48 C100 40 108 34 116 40 C124 46 122 58 112 62 L100 68"/>
-    <path d="M40 140 L100 68 L160 140" />
-    <path d="M58 122 L142 122"/>
+  <g fill="none" stroke="#C08A3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- crown -->
+    <path d="M74 46 L84 66 L100 40 L116 66 L126 46 L122 74 H78 Z"/>
+    <circle cx="100" cy="34" r="3.5" fill="#C08A3E" stroke="none"/>
+    <circle cx="74" cy="42" r="2.5" fill="#C08A3E" stroke="none"/>
+    <circle cx="126" cy="42" r="2.5" fill="#C08A3E" stroke="none"/>
+    <!-- ring -->
+    <circle cx="100" cy="118" r="46"/>
+    <!-- laurel left -->
+    <path d="M56 132 C48 140 46 152 50 162 M52 138 C46 142 42 148 42 154 M58 146 C52 148 48 152 46 158"/>
+    <!-- laurel right -->
+    <path d="M144 132 C152 140 154 152 150 162 M148 138 C154 142 158 148 158 154 M142 146 C148 148 152 152 154 158"/>
   </g>
-
-  <!-- flowing ribbon swirl (the "revogue" motion) -->
-  <path d="M62 96 C80 84 96 100 92 116 C88 132 106 140 122 128"
-        fill="none" stroke="#FFF8F3" stroke-width="4.5" stroke-linecap="round" opacity="0.9"/>
-
-  <circle cx="122" cy="128" r="4.5" fill="#FFF8F3"/>
+  <text x="100" y="134" font-family="Georgia, 'Playfair Display', serif" font-size="54" font-weight="600" fill="#C08A3E" text-anchor="middle">R</text>
 </svg>
